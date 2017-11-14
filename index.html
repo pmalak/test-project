@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>MUDr. Radka Doubková</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- ====== FIRST SCREEN WITH LOGO AND NAMES  ============ -->
+	<!-- ===================================================== -->
+	<section class="hero">
+		<img class="vrchni-krizky" src="img/vrchni-krizky.png" alt="backgound decoration image">
+		
+		<div class="content-wrap">
+				<div class="logo js-opacity"></div>
+				<div class="js-show-second js-opacity">
+					<h1>MUDr. Radka Doubková</h1>
+					<p>[praktický lékař]</p>
+				</div>				
+				<div class="js-show-third js-opacity">
+					<h2>Pavlína Zahradníková</h2>
+					<p>[asistent]</p>
+				</div>
+				
+		</div>
+		<!-- ====== Side transparent overlays  ====== -->
+		<div class="right side-column"> 
+			<div class="rightcol"></div> 
+		</div>
+		<div class="left side-column"> 
+			<div class="leftcol"></div> 
+		</div>
+	</section>
+
+<!-- ====== hero and main photo splitting line  ====== -->
+	<div class="greyline"></div>
+
+<!-- ====== PHOTOS LINE  =============================================== -->
+<!-- ================================================================== -->
+	<section class="photo">	
+		<div class="overlay-line"></div>
+		<div class="photo-wrap">			
+			<img src="img/main-photo.jpg" alt="main photo of doctors">		
+		</div>
+		<!-- ====== Side images ====== -->
+		<div class="right side-column"> 
+			<div class="rightcol"></div> 
+		</div>
+		<div class="left side-column"> 
+			<div class="leftcol"></div> 
+		</div>
+	</section>
+	
+	<!-- ====== MAIN CONTENT AND INFORMATIO  ============================== -->
+	<!-- ================================================================== -->
+	<div class="main-wrap container-fluid">
+		<section class="info ">
+			<div class="info-wrap">
+				<h3>Vítáme Vás na našich stránkách.</h3>
+				<p>Provozujeme ordinaci všeobecného praktického lékaře pro dospělé, která sídlí v nájemním prostoru areálu Plzeňského Prazdroje. Vjezd je umožněn hlavní bránou, parkování před vchodem.</p>
+
+				<p>Nabízíme běžné služby praktického lékaře pro registrované pacienty a závodní péči pro smluvní podniky.</p>
+
+				<p>Smluvní pojišťovny: 111, 201, 205, 207, 211</p>
+
+				<p>Upřednostňujeme objednávání pacientů, což minimalizuje dobu strávenou v čekárně a nám pomáhá lépe rozvrhnout naší práci.</p>
+
+			</div>
+		</section>
+
+		<!-- ====== NEWS AND UPDATES SECTION  ============================== -->
+		<section class="update">
+			<div class="update-wrap">
+				<h3>AKTUÁLNĚ</h3>
+				<p>Dne 17.10.17 ordinace lékaře 14.00-18.00 hod, dopoledne sestra v ordinaci, náběry krve ráno.</p>
+				<p>Dne 18.10.17 ordinace uzavřena, protestní akce proti plánovanému nárůstu administrativy a poklesu úhrad.</p>
+				<p>Zahájeno očkování proti chřipce, vakcíny v ordinaci.</p>
+			</div>
+		</section>
+	
+		<!-- ====== GROUP OF BUTTONS TO SHOW AND HIDE DETAILS ============== -->
+		<section class="buttons">
+			<div class="buttons-wrap container-fluid">
+				<ul class="row justify-content-between">
+					<li>
+						<a class="button" id="price-list" href="#">VÝKONY A CENÍK<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a class="button" id="schedule" href="#">ORDINAČNÍ DOBA<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a class="button" id="contacts" href="#">KONTAKTNÍ INFO<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+				
+			</div>
+		</section>
+
+		<!-- ====== DETAILS THAT ARE REVEALED AFTER CLICK ON RELATED BUTTON === -->
+		<section class="on-click-info container-fluid">
+			<div>
+				<div class="price-list js-hidden js-opacity">
+					<h3>Ordinační doba a kontaktní info jsou zajímavější</h3>
+
+					<p>Spicy jalapeno bacon ipsum dolor amet do cupim t-bone chuck esse qui mollit biltong nostrud excepteur eu shankle incididunt pancetta elit. Jowl pastrami alcatra kevin corned beef, nulla ut. Shankle dolor quis, flank tongue minim culpa duis ball tip cillum short loin. Ad est minim flank sausage. Beef ground round ut qui excepteur ut tempor strip steak anim alcatra landjaeger pastrami ea veniam.</p>
+				</div>
+			</div>
+						
+			<div class="schedule js-hidden js-opacity row justify-content-between">
+				<div class="hours col-12 col-md-5 col-lg-4">
+						<h3>Ordinační hodiny</h3>	
+						<table>
+							<tr>
+								<td>Pondělí</td>
+								<td>7.30–11.30</td>
+								<td>12.00–15.00</td>
+							</tr>
+							<tr>
+								<td>Úterý</td>
+								<td>7.30–11.30</td>
+								<td>14.00–18.00</td>
+							</tr>
+							<tr>
+								<td>Středa</td>
+								<td>7.30–11.30</td>
+								<td>12.00–15.00</td>
+							</tr>
+							<tr>
+								<td>Čtvrtek</td>
+								<td>7.30–11.30</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Pátek</td>
+								<td>7.30–11.30</td>
+								<td></td>
+							</tr>
+						</table>
+				</div>
+
+				<div class="info col-12 col-md-7 col-lg-8">
+					<h3>Informace k ordinační době</h3>
+					<ul>
+						<li>Denně od 7.00 do 7.30 hodin odběry krve.</li>
+						<li>Od 8.00 do 11.00 je vhodné dostavit se s akutním onemocněním.</li>
+						<li>V odpoledních hodinách jsou většinou ošetřování objednaní pacienti.</li>
+						<li>Z provozních důvodů příjem posledního pacienta do ordinace 15 minut před koncem ordinační doby.</li>
+					</ul>
+				</div>
+			</div>
+				
+			<div class="contacts row justify-content-between js-hidden js-opacity">
+				<div>
+					<h3>Kontaktní osoby</h3>
+					<p><strong>MUDr. Radka Doubková</strong></p>
+					<p>[praktický lékař]</p>
+					<p><strong>Pavlína Zahradníková</strong></p>
+					<p>[asistent]</p>
+				</div>
+
+				<div>
+					<h3>Sídlo / Identifikační číslo</h3>
+					<p>U Prazdroje 64/7</p>
+					<p>301 00 Plzeň</p>
+					<br>
+					<p>IČ: 03259919</p>
+				</div>
+
+				<div>
+					<h3>Kontaktní linky info</h3>
+					<p><strong>telefon:</strong>377 062 390</p>
+					<p><strong>e-mail:</strong>	ordinace@radkadoubkova.cz</p>
+					<br>
+					<p>E-mailovou adresu, prosím, nepoužívejte
+k naléhavé komunikaci.</p>
+				</div>
+			</div>
+					
+		</section>
+	</div>
+	
+
+	<footer>
+		<div class="center960 container">
+		<img src="img/logo-red.png" alt="">
+			<div class="row justify-content-between">
+				<div>
+					<p><strong>MUDr. Radka Doubková</strong></p>
+					<p>[praktický lékař]</p>
+					<p><strong>Pavlína Zahradníková</strong></p>
+					<p>[asistent]</p>
+				</div>
+
+				<div>
+					<p>U Prazdroje 64/7, 301 00 Plzeň</p>
+					<br>
+					<p><strong>telefon:</strong> 377 062 390</p>
+					<p><strong>e-mail:</strong> ordinace@radkadoubkova.cz</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

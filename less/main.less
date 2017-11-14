@@ -1,0 +1,153 @@
+.greyline {
+		position: relative;
+		background-color: #ededed;
+		height: 5px;
+	}
+	
+.photo {
+	position: relative;	
+	.overlay-line {
+		height: 6px;
+		width: 100%;
+		border-top: 4px solid #131313;
+		border-bottom: 1px solid #131313;
+		position: absolute;
+		// top: 0;
+		opacity: 0.15;
+		transform: translateY(-1px);
+		z-index: 10;
+	}
+	&:after{
+		.overlay-line;
+		display: block;
+		content: "";
+		bottom: 0;
+		transform: rotate(180deg)translateY(-2px);
+		z-index: 10;
+	}
+
+	.photo-wrap {
+		.center960;
+		img {
+			width: 100%;
+			display: block;
+			position: relative;
+			
+		}
+	}
+	.side-column { 
+		.leftcol {			
+			background:url('/img/main-photo-left.jpg') top right no-repeat;
+		} 
+		.rightcol {			
+			background:url('/img/main-photo-right.jpg') top left no-repeat;
+		}     
+	} 	
+}
+
+
+.main-wrap {
+	// .center960;
+	max-width: 960px;
+	@media (min-width: 960px) {
+		padding: 0;
+	}
+}
+
+//=================================================
+//============ WELCOME PART =======================
+.info-wrap {
+
+	h3 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	p {
+		color: @textColor;
+		margin-top: 5px;
+		&:nth-last-child(2) {
+			color: @red;
+			font-weight: 500;
+		}
+	}
+}
+
+//=================================================
+//============ UPDATES PART =======================
+.update-wrap {
+	margin-top: 80px;
+	background-color: @red;
+	color: @White;
+	padding: 20px;
+	@media (max-width: 960px) {				
+		margin-top: 20px;						
+	}
+	h3 {
+		color: @White;
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+	p {
+		font-weight: 500;
+		margin-top: 10px;
+	}
+}
+
+
+
+footer {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	position: relative;
+	min-height: 180px;
+	margin-top: 90px;
+	background: @footer-grey;
+	&:after {
+	  content: "";
+	  background-image: url(/img/spodni-krizky.png) ;
+	  background-position: center;
+	  opacity: 0.5;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: 1;   
+	}
+	img {
+		position: absolute;
+		top: -90px;
+		left: 0;
+		z-index: 10;
+	}
+	div {
+		z-index: 10;
+	}
+	@media (max-width: 959px) {
+		.row {
+			padding: 0 15px;
+		}
+		img {
+			left: 15px;
+		}
+	}
+	@media (max-width: 576px) {
+		margin-top: 60px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		.row {
+			margin: 0;
+		}
+		div {
+		text-align: center;		
+		width: 100%;
+		}
+		img {
+			top: -70px;
+			left: 50%;
+			transform: translateX(-50%)
+		
+		}
+	}
+	
+}

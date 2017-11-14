@@ -1,0 +1,72 @@
+
+
+@red: #ae0f0a;
+@textColor: #404040;
+@darkerRed: #8a1002;
+@White: #fff;
+@btn-grey: #9d9d9c;
+@footer-grey: #ededed;
+@cross-size: 180px;
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;	
+}
+
+body {
+	height: 100%;
+}
+p {
+	font-weight: 300;
+	margin: 0;
+}
+
+h3 {
+	font-size: 1.2rem;
+	color: @red;
+}
+
+.center960 {
+	position: relative;
+	max-width: 960px; 
+	margin: 0 auto;
+	}
+
+
+.side-column { 
+	width: 50%; 
+	height: 100%;
+	position: absolute; 
+	top: 0; 
+	// z-index: 10;
+	div {
+		height: 100%;
+		overflow:hidden;
+	}
+	.leftcol {
+		margin-right:480px;
+	} 
+	.rightcol {
+		margin-left:480px;
+	}     
+} 
+
+.left {left: 0;} 
+.right {right: 0;} 
+
+
+.js-hidden {
+	display: none;
+}
+
+.js-opacity {
+	opacity: 0;
+}
+
+
+@import "hero";
+@import "main";
+@import "info_buttons";

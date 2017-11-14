@@ -1,0 +1,36 @@
+width: @CrossSize;
+		height: @CrossSize;
+		.top-right {
+			width: 50%;
+			height: 50%;
+			border-left: @CrossSize/5.7 solid @White;
+			border-bottom: @CrossSize/5.7 solid @White;
+			position: absolute;
+			right: 0;
+		}
+		.bottom-left {
+			.top-right;
+			transform: rotate(180deg);
+			bottom: 0;
+			left: 0;
+			
+		}
+		.top-left {
+			border-right: 10px solid @logoPink;
+			position: absolute;
+			width: 40%;
+			height: 20%;
+		}
+
+		.bottom-right {
+			.top-left;
+			transform: rotate(180deg);
+			bottom: 0;
+			right: 0;
+		}	
+
+
+		<div class="top-left"></div>
+		<div class="top-right"></div>
+		<div class="bottom-left"></div>
+		<div class="bottom-right"></div>

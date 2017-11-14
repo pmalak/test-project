@@ -1,0 +1,118 @@
+
+//============butttons==============
+
+.buttons-wrap {
+	width: 100%;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 0;
+	@media (max-width: 960px) {				
+		margin-top: 15px;						
+	}
+	ul {	
+		padding:0;
+		margin-bottom: 0;
+		flex-wrap: nowrap;
+		@media (max-width: 768px) {				
+			flex-wrap: wrap;						
+		}
+		li {
+			position: relative;
+			width: 290px;
+			height: 60px;
+		  list-style-type: none;
+		  flex-grow: 0;
+		  @media (max-width: 768px) {		
+					width: 100%;
+					margin: 5px auto;											
+			}
+		  .button {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				padding-left: 20px;
+				line-height: 60px;
+				font-weight: 300;
+				font-size: 1.2rem;
+				text-decoration: none;
+				border: 1px solid @btn-grey;
+				color: @btn-grey;
+				transition: all 0.5s;
+				&:not(.selected):hover {
+					background-color: #eee;			
+				}				
+				i {
+					position: absolute;
+					line-height: inherit;
+					right: 0;
+					margin-right: 30px;
+					font-size: 2rem;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+
+
+.on-click-info {
+	padding-top: 50px;
+	position: relative;
+	display: none;
+	@media (max-width: 768px) {	
+		padding-top: 0;
+		h3 {
+		width: 100%;
+		margin-top: 20px;								
+		}	
+	}
+	.price-list{
+		transform: translateX(-15px);
+	
+	}
+
+	.contacts {
+		flex-wrap: nowrap;
+		@media (max-width: 768px) {				
+			flex-wrap: wrap;						
+		}
+		div{
+		position: relative;
+		width: 290px;
+			p {
+				font-size: 14px;
+			}
+		}		
+	}
+	
+	.schedule {
+		.hours {
+			padding: 0;
+			max-width: 290px;
+			table {
+			width: 100%;
+			font-weight: 300;
+			font-size: 0.9rem;
+			table-layout: fixed;			
+			}
+		}	
+		.info {
+			@media (max-width: 767px) {
+				margin-top: 20px;
+				padding: 0;
+			}
+			ul {
+				padding-left: 20px;
+				font-weight: 300;
+			}		
+		}	
+	}
+}
+
+.selected {
+	border: 1.5px solid @red !important;
+	color: @red !important;
+	font-weight: 500 !important;
+}
